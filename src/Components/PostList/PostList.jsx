@@ -2,10 +2,10 @@
 const PostList = (props) => {
     return (
         <tables>
-        <tr>Name</tr>
-        <tr>Post</tr>
-        <tbody>
-          {entries.map((entry) => {
+            <tr>Name</tr>
+            <tr>Post</tr>
+            <tbody>
+            {props.parententries.map((entry) => {
             return (
               <tr>
                 <td>{entry.Name}</td>
@@ -18,4 +18,4 @@ const PostList = (props) => {
       );
 }
  
-export default ;
+export default PostList;

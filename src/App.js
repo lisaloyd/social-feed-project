@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import PostList from './Components/PostList/PostList';
 
 
 function App() {
@@ -8,20 +8,8 @@ const [entries, setEntries] = useState([{Name: 'Kevin Williams', Post: 'I am pla
 
   return (
     <div>
-      <tables>
-        <tr>Name</tr>
-        <tr>Post</tr>
-        <tbody>
-          {entries.map((entry) => {
-            return (
-              <tr>
-                <td>{entry.Name}</td>
-                <td>{entry.Post}</td>
-              </tr>
-            );
-          })}
-        </tbody>
-      </tables>
+      <PostList parententries={entries} />
+
     </div>
   );
 }
