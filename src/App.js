@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PostList from './Components/PostList/PostList';
+import CreatePostForm from './Components/CreatePostForm/CreatePostForm';
 
 
 function App() {
@@ -9,7 +10,7 @@ const [entries, setEntries] = useState([{Name: 'Kevin Williams', Post: 'I am pla
   return (
     <div>
       <PostList parententries={entries} />
-
+      <CreatePostForm />
     </div>
   );
 }
