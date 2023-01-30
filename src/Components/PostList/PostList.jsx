@@ -1,14 +1,7 @@
-import React, { useState } from 'react';
 
-
-
-function App() {
-
-const [entries, setEntries] = useState([{Name: 'Kevin Williams', Post: 'I am planning my vacation!'}])
-
-  return (
-    <div>
-      <tables>
+const PostList = (props) => {
+    return (
+        <tables>
         <tr>Name</tr>
         <tr>Post</tr>
         <tbody>
@@ -22,8 +15,7 @@ const [entries, setEntries] = useState([{Name: 'Kevin Williams', Post: 'I am pla
           })}
         </tbody>
       </tables>
-    </div>
-  );
+      );
 }
-
-export default App;
+ 
+export default ;
