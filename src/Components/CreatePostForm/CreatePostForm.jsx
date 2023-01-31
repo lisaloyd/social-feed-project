@@ -13,16 +13,16 @@ const CreatePostForm = (props) => {
             post: post
         };
         console.log(newEntry);
+        props.addNewEntryProperty(newEntry)
     }
-
     return ( 
         <form onSubmit={handleSubmit}>
             <div>
-                <label>Name</label>
+                <label htmlFor=''>Name</label>
                 <input type='text' value={name} onChange={(event) => setName(event.target.value)} />
             </div>
             <div>
-                <label>Post</label>
+                <label htmlFor=''>Post</label>
                 <input type='text' value={post} onChange={(event) => setPost(event.target.value)} />
                 <button type='submit'>Create</button>
             </div>
