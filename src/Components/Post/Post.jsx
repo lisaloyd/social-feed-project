@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+
 const Post = props => {
     console.log(props);
     return (
@@ -12,4 +13,4 @@ const Post = props => {
     );
 }
 
-export default Post
+export default Post;
