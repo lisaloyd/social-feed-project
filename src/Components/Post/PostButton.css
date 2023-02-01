@@ -1,0 +1,20 @@
+button {
+    color: white;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 50%;
+}
+.activelike{
+    background-color: green;
+}
+
+.activedislike{
+    background-color: red;
+}
+
+.inactive{
+    background-color: grey;
+}
