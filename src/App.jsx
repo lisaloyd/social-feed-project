@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PostList from "./Components/PostList/PostList";
 import CreatePostForm from "./Components/CreatePostForm/CreatePostForm";
-
+import './App.css';
 
 
 
@@ -17,8 +17,12 @@ function App() {
 
   return (
     <div>
-      <CreatePostForm addNewEntryProperty={addNewEntry} />
-      <PostList parentEntries={entries} />
+      <div className='border-box'>
+        <CreatePostForm addNewEntryProperty={addNewEntry} />
+      </div>
+      <div className='border-box'>  
+        <PostList parentEntries={entries} />
+      </div>
     </div>
   );
 }
