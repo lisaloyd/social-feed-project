@@ -11,13 +11,13 @@ function App() {
   ]);
 
   function addNewEntry(entry) {
-    let tempEntries = { entry, ...entries };
+    let tempEntries = [entry, ...entries];
     setEntries(tempEntries);
   }
 
   return (
     <div>
-      <CreatePostForm AddNewEntryProperty={addNewEntry} />
+      <CreatePostForm addNewEntryProperty={addNewEntry} />
       <PostList parentEntries={entries} />
     </div>
   );
